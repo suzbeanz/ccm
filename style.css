@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --gold:   #2f6fb2;
+  --blue:   #2f6fb2;
   --dark:   #111111;
   --mid:    #222222;
   --light:  #f5f5f5;
@@ -20,7 +20,7 @@ body {
   background: var(--white);
 }
 
-a { color: var(--gold); text-decoration: none; }
+a { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ── HEADER ─────────────────────────────────────────── */
@@ -45,7 +45,7 @@ header {
   color: var(--dark);
 }
 .site-title a { color: inherit; }
-.site-title a:hover { text-decoration: none; color: var(--gold); }
+.site-title a:hover { text-decoration: none; color: var(--blue); }
 
 nav ul {
   list-style: none;
@@ -58,7 +58,7 @@ nav ul {
   text-transform: uppercase;
 }
 nav a { color: var(--dark); }
-nav a:hover, nav a.active { color: var(--gold); text-decoration: none; }
+nav a:hover, nav a.active { color: var(--blue); text-decoration: none; }
 
 /* ── HERO ────────────────────────────────────────────── */
 .hero {
@@ -89,7 +89,7 @@ nav a:hover, nav a.active { color: var(--gold); text-decoration: none; }
 .hero-rule {
   width: 60px;
   height: 3px;
-  background: var(--gold);
+  background: var(--blue);
   margin: 0 auto 20px;
 }
 .hero p {
@@ -100,7 +100,7 @@ nav a:hover, nav a.active { color: var(--gold); text-decoration: none; }
 }
 .btn {
   display: inline-block;
-  background: var(--gold);
+  background: var(--blue);
   color: var(--white);
   font-family: 'Arial', sans-serif;
   font-size: 0.78rem;
@@ -179,7 +179,7 @@ main {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--dark);
-  border-bottom: 2px solid var(--gold);
+  border-bottom: 2px solid var(--blue);
   padding-bottom: 6px;
   margin: 40px 0 20px;
 }
@@ -203,7 +203,7 @@ main {
 /* Contact blurb */
 .contact-blurb {
   background: var(--light);
-  border-left: 4px solid var(--gold);
+  border-left: 4px solid var(--blue);
   padding: 20px 24px;
   margin-top: 40px;
   font-size: 0.95rem;
@@ -224,7 +224,7 @@ main {
 }
 .service-list li::before {
   content: '▸ ';
-  color: var(--gold);
+  color: var(--blue);
 }
 .audio-note {
   background: #f2f7ff;
@@ -299,7 +299,7 @@ audio { width: 100%; margin-bottom: 10px; display: block; }
   transition: border-color 0.2s;
 }
 .contact-form input:focus,
-.contact-form textarea:focus { border-color: var(--gold); }
+.contact-form textarea:focus { border-color: var(--blue); }
 .contact-form textarea { height: 140px; resize: vertical; }
 .contact-form .btn { margin-top: 20px; }
 
@@ -314,7 +314,7 @@ footer {
   letter-spacing: 0.04em;
   margin-top: 60px;
 }
-footer a { color: var(--gold); }
+footer a { color: var(--blue); }
 
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 720px) {
