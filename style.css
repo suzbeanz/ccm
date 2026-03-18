@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --gold:   #c8973a;
+  --gold:   #2f6fb2;
   --dark:   #111111;
   --mid:    #222222;
   --light:  #f5f5f5;
@@ -111,7 +111,7 @@ nav a:hover, nav a.active { color: var(--gold); text-decoration: none; }
   cursor: pointer;
   transition: background 0.2s;
 }
-.btn:hover { background: #a87930; text-decoration: none; color: var(--white); }
+.btn:hover { background: #24598f; text-decoration: none; color: var(--white); }
 
 /* ── PAGE HERO (inner pages) ─────────────────────────── */
 .page-hero {
@@ -227,8 +227,8 @@ main {
   color: var(--gold);
 }
 .audio-note {
-  background: #fffbf2;
-  border: 1px solid #e8d5a0;
+  background: #f2f7ff;
+  border: 1px solid #b8cceb;
   border-radius: 4px;
   padding: 14px 18px;
   font-size: 0.88rem;
