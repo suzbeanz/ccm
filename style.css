@@ -62,16 +62,29 @@ nav a:hover, nav a.active { color: var(--gold); text-decoration: none; }
 
 /* ── HERO ────────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 60%, #2a2a2a 100%);
+  position: relative;
+  background: url('images/microphone-background.jpg') center / cover no-repeat;
   color: var(--white);
   text-align: center;
-  padding: 100px 24px 90px;
+  padding: 120px 24px 110px;
+  isolation: isolate;
 }
+/* Dark overlay with opacity */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+  z-index: 0;
+}
+.hero > * { position: relative; z-index: 1; }
+
 .hero h1 {
   font-size: 2.8rem;
   font-weight: normal;
   letter-spacing: 0.04em;
   margin-bottom: 16px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
 }
 .hero-rule {
   width: 60px;
@@ -81,9 +94,9 @@ nav a:hover, nav a.active { color: var(--gold); text-decoration: none; }
 }
 .hero p {
   font-size: 1.1rem;
-  color: #cccccc;
-  margin-bottom: 32px;
-  letter-spacing: 0.04em;
+  color: #dddddd;
+  margin-bottom: 36px;
+  letter-spacing: 0.05em;
 }
 .btn {
   display: inline-block;
@@ -102,15 +115,27 @@ nav a:hover, nav a.active { color: var(--gold); text-decoration: none; }
 
 /* ── PAGE HERO (inner pages) ─────────────────────────── */
 .page-hero {
-  background: var(--dark);
+  position: relative;
+  background: url('images/microphone-background.jpg') center 40% / cover no-repeat;
   color: var(--white);
   text-align: center;
-  padding: 54px 24px 46px;
+  padding: 64px 24px 56px;
+  isolation: isolate;
 }
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 0;
+}
+.page-hero > * { position: relative; z-index: 1; }
+
 .page-hero h1 {
   font-size: 2rem;
   font-weight: normal;
   letter-spacing: 0.05em;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 .page-hero .hero-rule { margin-top: 14px; }
 
